@@ -210,3 +210,39 @@
     min-height: 250px;
   }
 }
+
+.promo-banner {
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.promo-banner p {
+  margin: 0;
+}
+
+.promo-banner strong {
+  color: #38bdf8;
+}
+
+.promo-support-link {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.promo-support-link:hover {
+  opacity: 0.8;
+}
+

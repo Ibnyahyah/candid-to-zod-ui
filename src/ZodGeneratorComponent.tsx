@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Code2, ArrowRight, CheckCircle2, Copy, AlertCircle } from 'lucide-react';
-// @ts-ignore
-import { generateZod } from 'candid-to-zod/dist/generator';
+import { generateZod } from 'candid-to-zod';
 import * as ts from 'typescript';
 import './ZodGenerator.css';
 
@@ -77,16 +76,16 @@ export default function ZodGeneratorComponent() {
          <p>Paste the contents of your Dfinity generated <code>.did.js</code> file below</p>
       </div>
 
-      <div style={{ background: 'rgba(56, 189, 248, 0.1)', border: '1px solid rgba(56, 189, 248, 0.2)', padding: '1rem', borderRadius: '8px', marginBottom: '2rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center', textAlign: 'center' }}>
-        <p style={{ margin: 0, fontSize: '0.95rem' }}>
+      <div className="promo-banner">
+        <p style={{ fontSize: '0.95rem' }}>
           🚀 <strong>Did you know?</strong> This generator is available as an NPM library for your CI/CD! 
         </p>
-        <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+        <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
           Run <code>npm install -D candid-to-zod</code> to use the CLI directly in your project.
         </p>
-        <p style={{ margin: 0, fontSize: '0.85rem', marginTop: '0.5rem' }}>
-          💖 <a href="http://socio.kim/donate" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'none', fontWeight: 500 }}>Support this project</a>
-        </p>
+        <a href="http://socio.kim/donate" target="_blank" rel="noopener noreferrer" className="promo-support-link">
+          💖 Support this project
+        </a>
       </div>
       
       {error && (
