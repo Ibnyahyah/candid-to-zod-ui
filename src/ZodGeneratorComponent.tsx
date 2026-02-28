@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Code2, ArrowRight, CheckCircle2, Copy, AlertCircle } from 'lucide-react';
 // @ts-ignore
 import { generateZod } from 'candid-to-zod/dist/generator';
